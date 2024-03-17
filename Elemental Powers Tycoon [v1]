@@ -13,7 +13,7 @@ Y88b. .d88P    Y88b 888    .d8""8b.    888
 local G2L = {};
 
 -- StarterGui.Ouxi
-G2L["1"] = Instance.new("ScreenGui", game.CoreGUi);
+G2L["1"] = Instance.new("ScreenGui", game.CoreGui);
 G2L["1"]["IgnoreGuiInset"] = true;
 G2L["1"]["AutoLocalize"] = false;
 G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
