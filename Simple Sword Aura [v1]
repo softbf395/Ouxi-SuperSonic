@@ -8,6 +8,7 @@ d88P" "Y88b                            Y8P
 Y88b. .d88P    Y88b 888    .d8""8b.    888 
  "Y88888P"      "Y88888    888  888    888  [v1]
 ]=]
+
 -- Instances: 16 | Scripts: 2 | Modules: 0
 local G2L = {};
 
@@ -149,10 +150,10 @@ local script = G2L["f"];
 			wait()
 			local plr = game.Players.LocalPlayer
 			local tool = plr.Character:GetChildren() for i,v in tool do if v:IsA("Tool") then tool=v end end
-			for i,v in pairs(game.Workspace:GetDescendants()) do
-				if v.Name == "HumanoidRootPart" then
-					if v.Parent.Name == plr.Name then else
-						local mag = (v.Position - plr.Character:FindFirstChild("HumanoidRootPart").Position).Magnitude
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v.Character:FindFirstChild("HumanoidRootPart") then
+					if v.Name == plr.Name then else
+						local mag = (v.Character:FindFirstChild("HumanoidRootPart") - plr.Character:FindFirstChild("HumanoidRootPart").Position).Magnitude
 						if mag <= distance then
 							tool:Activate()
 						end	
