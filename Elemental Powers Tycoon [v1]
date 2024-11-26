@@ -407,7 +407,24 @@ local script = G2L["17"];
 			[5] = "Meteor Jam",
 			[6] = "Cosmic Remote",
 			[7] = "Space Saucer"
-		}
+		};
+                ["Super Sonic"] = {
+                        [1]="Sonic Blaster";
+                        [2]="Sonic Barrage";
+                     [3]="Sonic Twister";
+                     [4]="Rebound Blast";
+                     [5]="Rebound Teleport";
+                     [6]="Sonic Boom";
+                     [7]="Sonic Blaster";
+                };
+                ["Rebirth"] = {
+                        [1]="Dark Flames";
+                        [2]="Draedron's Tech";
+                     [3]="Yoru";
+                     [4]="Plasma Orbs";
+                     [5]="Red Saucer";
+                     [6]="Undead Staff";
+                };
 	}
 	
 	local function addLabel(string)
