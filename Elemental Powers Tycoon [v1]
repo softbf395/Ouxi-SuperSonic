@@ -463,13 +463,6 @@ local script = G2L["17"];
 			addButton(value2)
 		end
 	end
-	local Open=Instance.new("ImageButton", script.Parent.Parent.Parent)
-       Open.Image=script.Parent.Close.ImageButton.Image
-       Open.BackgroundTransparency=1
-      Open.Name="Open"
-       Open.MouseButton1Click:Connect(function()
-            script.Parent.Parent.Visible=true
-        end)
 	script.Parent.Close.ImageButton.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible=false
 		
