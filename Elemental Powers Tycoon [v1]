@@ -463,21 +463,16 @@ local script = G2L["17"];
 			addButton(value2)
 		end
 	end
-	
+	local Open=Instance.new("ImageButton", script.Parent.Parent.Parent)
+       Open.Image=script.Parent.Close.Image
+       Open.BackgroundTransparency=1
+      Open.Name="Open"
+       Open.MouseButton1Click:Connect(function()
+            script.Parent.Parent.Visible=true
+        end)
 	script.Parent.Close.ImageButton.MouseButton1Click:Connect(function()
-		script.Parent.Parent:Destroy()
-		if script.Parent.Parent then
-			script.Parent.Parent.Enabled = false
-			if script.Parent.Parent.Enabled == true then
-				script.Parent:Destroy()
-				if script.Parent then
-					script.Parent.Visible = false
-					if script.Parent.Visible == true then
-						print("[Ouxi]: Failed to close")
-					end
-				end
-			end
-		end
+		script.Parent.Parent.Visible=false
+		
 	end)
 
 end;
